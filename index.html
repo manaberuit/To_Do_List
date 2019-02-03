@@ -1,0 +1,48 @@
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>to_do_list</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>ToDoリスト</h1>
+  <form name="form1">
+  <input type="radio"  name="statement"checked="checked">すべて
+  <input type="radio" name="statement" onclick="display_changed(0);">作業中
+  <input type="radio" name="statement">完了
+
+</form>
+   <table>
+
+     
+  <tr>
+    <th width="80">ID</th>
+    <th width="80">コメント</th>
+    <th width="80">作業中</th>
+    <th width="80">-</th>
+  </tr>
+  <tr>
+    <th width="80">01</th>
+    <th width="80">タスク01</th>
+    <th width="80"><button id="task01" onclick="change_completed();">作業中</button></th>
+    <th width="80"><button  onclick="remove_task();">削除</button></th>
+  </tr>
+  <tr>
+    <th width="80">02</th>
+    <th width="80">タスク02</th>
+    <th width="80"><button id="task02"onclick="change_completed2();">作業中</button></th>
+    <th width="80"><button onclick="remove_task();">削除</button></th>
+  </tr>
+
+
+</div>
+
+
+  <div class="add_task">
+    <p>新規タスクの追加</p>
+    <input type="text" id="add"><button>追加</button>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
